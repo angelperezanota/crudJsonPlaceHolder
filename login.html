@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <form name=form action="index.html">
+        <p>User: <input type=text name=user> 
+        <p>Pass: <input type=password name=pass> 
+        <input onclick=login() type=button value=Ingresar>
+    </form> 
+</body>
+<script> 
+    function login(){
+    if (document.form.pass.value=='pass' && document.form.user.value=='admin'){ 
+            document.form.submit(); 
+        } 
+        else{ 
+             alert("Datos incorrectos."); 
+        } 
+    } 
+</script> 
+</html>
